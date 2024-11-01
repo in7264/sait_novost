@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1><%= title %></h1>
+    </header>
+    <div class="container">
+        <% newsList.forEach(news => { %>
+            <div class="news-item">
+                <h2><%= news.title %></h2>
+                <p class="date"><%= news.date %></p>
+                <p><%= news.content %></p>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
